@@ -55,6 +55,23 @@ below, i want to say something about interactive with database
 4. spacial:
    sqllite means one to mutiple, one to one, multiple to multiple. so i can get ojbect by foreignkey from otherobject in shell. that's amazing. 
 
+### 
+using amdin interface to manage app.
+1.create superuser
+comm: python manage.py createsuperuser
+
+then show in web.
+
+2.add our own app into admin interface.
+edit file: app/amdin.py
+    from django.contrib import admin
+    from .models import Question
+    
+    admin.site.register(Question)
+
+now, i can manage register_object in admin interface.
+
+3.pay attention to different type and field.
 
 
      
