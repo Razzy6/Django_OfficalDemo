@@ -75,4 +75,6 @@ now, i can manage register_object in admin interface.
 
 
      
+###
+using url and namespace to deal with multiple url mapping, such as, from app1 to app2, can produce a link like {% url 'app2:detail' %}, it accomplish overarea now.
 
